@@ -1,0 +1,211 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p.slogan {
+    margin: 0;
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cart a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1 1 calc(25% - 1rem);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.product .description {
+    margin: 0.5rem 0;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos del modal del carrito */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-modal-content {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    max-height: 80%; /* Limita la altura del modal */
+    overflow: hidden; /* Oculta el desbordamiento del contenido */
+}
+
+.cart-modal-content h2 {
+    margin-top: 0;
+}
+
+.cart-modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.cart-items-container {
+    max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto; /* Agrega barra de desplazamiento vertical */
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item .item-details {
+    flex-grow: 1;
+}
+
+.cart-item p {
+    margin: 0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+#empty-cart {
+    background-color: #ff4500;
+}
+
+#empty-cart:hover {
+    background-color: #ff6347;
+}
+/* Estilos para la sección de redes sociales */
+.social-container {
+    display: flex;
+    justify-content: center; /* Alinea los iconos en el centro */
+    gap: 20px; /* Espacio entre los iconos */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.social-icon img {
+    width: 40px; /* Tamaño de los iconos */
+    height: 40px; /* Tamaño de los iconos */
+    transition: transform 0.3s; /* Efecto de transición para el hover */
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el ratón por encima */
+}

@@ -1,0 +1,63 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: url('https://i.pinimg.com/originals/3e/ff/95/3eff95736add4a0ef9d151542e41de1a.gif') no-repeat center center fixed; /* Usando el enlace directo del GIF */
+    background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilos del contenedor principal */
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+/* Estilos del encabezado */
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Estilos de las secciones de introducción */
+.intro {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.intro p {
+    font-size: 1.1em;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid #333;
+}
